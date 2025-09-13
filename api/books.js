@@ -1,30 +1,4 @@
-// api/books.js - Vercel serverless function
-// Place this file in /api/books.js directory
-
-// Sample book data (in production, use a database)
-const books = [
-    {
-        id: 1,
-        title: "The Great Gatsby",
-        author: "F. Scott Fitzgerald",
-        publishedDate: "1925-04-10",
-        genres: ["Classic", "Fiction", "American Literature"]
-    },
-    {
-        id: 2,
-        title: "To Kill a Mockingbird",
-        author: "Harper Lee",
-        publishedDate: "1960-07-11",
-        genres: ["Classic", "Fiction", "Southern Gothic"]
-    },
-    {
-        id: 3,
-        title: "1984",
-        author: "George Orwell",
-        publishedDate: "1949-06-08",
-        genres: ["Dystopian", "Science Fiction", "Political Fiction"]
-    }
-];
+import { books } from './booksData';
 
 // Helper functions
 const findBookById = (id) => books.find(book => book.id === parseInt(id));
